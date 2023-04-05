@@ -2,7 +2,7 @@ import { StyleSheet, View, Image, FlatList, useWindowDimensions, Text, ScrollVie
 import products from "../data/products";
 
 const ProductDetailsScreen = () => {
-    const product = products[0];
+    const product = products[11];
     const { width } = useWindowDimensions();
     const addToCart = () => {
         console.warn("added")

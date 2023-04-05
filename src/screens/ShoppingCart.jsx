@@ -42,7 +42,7 @@ const ShoppingCart = () => {
                     shopingCartTotal
                 }
             />
-            <Pressable style={styles.button}>
+            <Pressable onCl style={styles.button}>
                 <Text style={styles.buttonText}>
                     Checkout
                 </Text>
