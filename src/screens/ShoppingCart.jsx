@@ -2,42 +2,67 @@ import { FlatList, View, StyleSheet, Pressable } from "react-native"
 import { Text } from "react-native"
 import cart from "../data/cart"
 import CartListItem from "../components/CartListItem"
+import { useSelector } from "react-redux"
+import { selectDeliveryPrice, selectSubtotal, selectTotal, selectNumberOfItems } from "../store/cartSlice"
 
-const shopingCartTotal = () => (
-    <View style={styles.totalsContainer}>
-        <View style={styles.row}>
-            <Text style={styles.text}>
-                Subtotal
-            </Text>
-            <Text style={styles.text}>
-                $400 usd
-            </Text>
 
-        </View>
-        <View style={styles.row}>
-            <Text style={styles.text}>
-                Delivery
-            </Text>
-            <Text style={styles.text}>
-                $400 usd
-            </Text>
 
-        </View>
-        <View style={styles.row}>
-            <Text style={styles.textBold}>
-                Total
-            </Text>
-            <Text style={styles.text}>
-                $800 usd
-            </Text>
+const shopingCartTotal = () => {
+    const subTotal = useSelector(selectSubtotal)
+    const deliveryFee = useSelector(selectDeliveryPrice)
+    const total = useSelector(selectTotal)
+    const cartLength = useSelector(selectNumberOfItems);
 
-        </View>
-    </View>
-)
-const ShoppingCart = () => {
     return (
         <>
-            <FlatList data={cart} renderItem={({ item }) => <CartListItem cartItem={item} />}
+            {
+                cartLength === 0 ? (
+                    <View style={styles.empty}>
+                        <Text style={styles.emptyText}>Cart is empty</Text>
+                    </View>
+                ) : (
+                    <View style={styles.totalsContainer}>
+                        <View style={styles.row}>
+                            <Text style={styles.text}>
+                                Subtotal
+                            </Text>
+                            <Text style={styles.text}>
+                                {subTotal} $ usd
+                            </Text>
+
+                        </View>
+                        <View style={styles.row}>
+                            <Text style={styles.text}>
+                                Delivery
+                            </Text>
+                            <Text style={styles.text}>
+                                ${deliveryFee} usd
+                            </Text>
+
+                        </View>
+                        <View style={styles.row}>
+                            <Text style={styles.textBold}>
+                                Total
+                            </Text>
+                            <Text style={styles.text}>
+                                ${total} usd
+                            </Text>
+
+                        </View>
+                    </View >
+                )
+            }
+        </>
+
+    )
+}
+
+
+const ShoppingCart = () => {
+    const cartItems = useSelector(state => state.cart.items)
+    return (
+        <>
+            <FlatList data={cartItems} renderItem={({ item }) => <CartListItem cartItem={item} />}
                 ListFooterComponent={
                     shopingCartTotal
                 }
@@ -93,6 +118,16 @@ const styles = StyleSheet.create({
         fontWeight: '500',
         fontSize: 16,
 
+    },
+    empty: {
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 10
+    },
+    emptyText: {
+        fontSize: 24,
+        fontWeight: 400,
+        color: "gray"
     }
 })
 
