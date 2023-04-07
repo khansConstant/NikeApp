@@ -3,7 +3,7 @@
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 <img src="./images/Screenshot_2023-04-07-06-30-33-018_com.zangets404.NikeApp.jpg" width=300 hweight=150/>
  homePage
- <img src="Screenshot_2023-04-07-06-30-46-193_com.zangets404.NikeApp.jpg" width=300 hweight=150/>
+ <img src="./Screenshot_2023-04-07-06-30-46-193_com.zangets404.NikeApp.jpg" width=300 hweight=150/>
 cart
-<img src="Screenshot_2023-04-07-06-30-46-193_com.zangets404.NikeApp.jpg" width=300 hweight=150/>
+<img src="./Screenshot_2023-04-07-06-30-46-193_com.zangets404.NikeApp.jpg" width=300 hweight=150/>
 produxt detail
