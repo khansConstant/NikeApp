@@ -3,7 +3,7 @@
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 # Screenshots
-  <p style="font-size:100px">Screenshots<p/>
+ 
   <img src="images/Screenshot_2023-04-07-06-30-33-018_com.zangets404.NikeApp.jpg" alt="Image" style="width: 300px;">
 
 <img src="images/Screenshot_2023-04-07-06-30-46-193_com.zangets404.NikeApp.jpg" alt="Image" style="width: 300px;">
