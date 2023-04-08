@@ -3,5 +3,5 @@
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 <div style="width:60px ; height:60px">
 ![home](images/Screenshot_2023-04-07-06-30-33-018_com.zangets404.NikeApp.jpg)
-  <div/>
+  <div>
 
