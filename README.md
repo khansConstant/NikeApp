@@ -3,11 +3,13 @@
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 # Screenshots
- 
-  <img src="images/Screenshot_2023-04-07-06-30-33-018_com.zangets404.NikeApp.jpg" alt="Image" style="width: 300px;">
 
+ # Products 
+  <img src="images/Screenshot_2023-04-07-06-30-33-018_com.zangets404.NikeApp.jpg" alt="Image" style="width: 300px;">
+# Prdocut detail
 <img src="images/Screenshot_2023-04-07-06-30-46-193_com.zangets404.NikeApp.jpg" alt="Image" style="width: 300px;">
 
+# Cart
 <img src="images/Screenshot_2023-04-07-06-31-02-671_com.zangets404.NikeApp.jpg" alt="Image" style="width: 300px;">
 
 
